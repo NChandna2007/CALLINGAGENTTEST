@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vapi Agent Test</title>
+    <script src="https://cdn.jsdelivr.net/gh/VapiAI/html-script-tag@latest/dist/assets/index.js" defer async></script>
+  </head>
+  <body>
+    <h1>Test the Voice Agent</h1>
+    <p>Click the widget bottom-right to start.</p>
+
+    <script>
+      window.addEventListener("load", () => {
+        window.vapiSDK.run({
+          apiKey: "YOUR_PUBLIC_KEY",
+          assistant: "091adcef-cd9e-4be0-9b36-bc3059332450",
+          config: { position: "bottom-right" }
+        });
+      });
+    </script>
+  </body>
+</html>
